@@ -1,0 +1,196 @@
+body {
+    font-family: "Lobster", sans-serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    color: #333;
+    max-width: 100%;
+    background-image: url(../img/coffee.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+span {
+    color: #d2691e;
+}
+
+.header {
+    font-size: 4vw; /* Cambiar a unidad relativa */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.83);
+    color: #747474;
+    margin: 0 0 1rem 0;
+}
+
+.header-title {
+    font-family: "Lobster", sans-serif;
+    font-weight: 900;
+    margin: 0;
+    font-size: 2rem; /* Cambiar a un tamaño más pequeño en pantallas pequeñas */
+}
+
+.logo-image {
+    height: 5rem;
+    width: auto;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-link,
+footer .social-link {
+    text-decoration: none;
+    color: #333;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover,
+.social-link:hover {
+    color: #d2691e;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: black;
+    font-size: 1.5rem;
+}
+
+footer .social-link {
+    display: grid;
+}
+
+.bienvenido {
+    color: #747474;
+    text-align: center;
+    font-size: 2rem;
+}
+
+form {
+    font-size: 2rem;
+    width: 50%;
+    margin: 5rem auto; /* Centrar el formulario */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.83);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    width: 100%; /* Hacer que el input ocupe todo el ancho */
+    padding: 8px;
+    margin-bottom: 10px;
+    font-family: "Lobster", sans-serif;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    background-color: #d2691e;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    cursor: pointer;
+    font-family: "Lobster", sans-serif;
+}
+
+button:hover {
+    background-color: #c05e1e;
+}
+
+.hidden {
+    display: none;
+}
+
+#message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Media queries para mayor adaptabilidad */
+@media (max-width: 600px) {
+    .header {
+        text-align: center;
+        font-size: 2rem; 
+        flex-direction: column; 
+        align-items: center;
+        padding: 1rem; 
+    }
+    .header-title {
+        margin: 1rem 0;
+    }
+
+    .nav {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    form {
+        width: 90%; /* Aumentar el ancho en pantallas pequeñas */
+        margin: 2rem auto; /* Espaciado más pequeño */
+    }
+
+    .bienvenido {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+    }
+
+    .nav-link,
+    footer .social-link {
+        font-size: 1.2rem; /* Ajustar tamaño del enlace */
+        margin: 0.5rem 0; /* Añadir margen vertical */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header {
+        text-align: center;
+        font-size: 3rem;
+        padding: 1rem 1.5rem;
+    }
+    .header-title {
+        margin: 0 1rem;
+    }
+
+    form {
+        width: 75%; /* Ajustar el ancho en pantallas medianas */
+    }
+
+    .bienvenido {
+        font-size: 1.8rem; /* Ajustar tamaño del texto */
+    }
+}
+
+@media (min-width: 1025px) {
+    form {
+        width: 50%; /* Mantener el ancho en pantallas grandes */
+    }
+    
+    .carousel-container {
+        width: 55%;
+    }
+
+    .card-container {
+        width: 80%;
+    }
+}

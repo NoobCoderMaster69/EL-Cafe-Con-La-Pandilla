@@ -1,0 +1,182 @@
+body {
+    font-family: "Lobster", sans-serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    color: #333;
+    max-width: 100%;
+    background-image: url(../img/coffee.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+span{
+    color: #d2691e;
+}
+
+.header {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.83);
+    color: #747474;
+    margin: 0 0 1rem 0;
+}
+
+.header-title {
+    font-family: "Lobster", sans-serif;
+    font-weight: 900;
+}
+
+.logo-image {
+    height: 5rem;
+    width: auto;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-link,
+footer .social-link {
+    text-decoration: none;
+    color: #333;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover,
+.social-link:hover {
+    color: #d2691e;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: black;
+    font-size: 1.5rem;
+}
+footer .social-link{
+    display: grid;
+}
+
+.titulocard {
+    font-weight: 600;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #666666;
+}
+
+.card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    margin: 2rem 0;
+    color: black;
+}
+
+.card {
+    background-color: #f8f9fa;
+    border-radius: 0.6rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 70%;
+    transition: transform 0.3s ease-in-out;
+    padding: 1rem;
+    margin: 1.5rem 0 0 3.5rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+    border-radius: 1rem;
+}
+
+.card-text {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Media Queries para Responsive */
+
+/* Pantallas pequeñas (teléfonos) */
+@media (max-width: 600px) {
+    .header {
+        text-align: center;
+        font-size: 2rem; /* Ajustar tamaño de la fuente */
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center;
+        padding: 1rem; /* Ajustar padding */
+    }
+    .header-title {
+        margin: 1rem 0;
+    }
+
+    .nav {
+        flex-direction: column; /* Menú en columna */
+        align-items: center;
+    }
+
+    .titulocard {
+        font-size: 1.5rem; /* Reducir tamaño del título */
+    }
+
+    .card-container {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .card {
+        margin: 1.5rem auto; /* Centrar las tarjetas */
+        width: 80%; /* Ancho completo en pantallas pequeñas */
+    }
+}
+
+/* Pantallas medianas (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header {
+        font-size: 3rem; /* Ajustar tamaño de la fuente */
+        padding: 1rem 1.5rem; /* Ajustar padding */
+    }
+    .header-title {
+        margin: 0 1rem;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+    }
+
+    .titulocard {
+        font-size: 1.8rem; /* Ajustar tamaño del título */
+    }
+
+    .card {
+        width: 80%; /* Ajustar el ancho de las tarjetas */
+        margin: 1.5rem auto; /* Centrar tarjetas */
+    }
+}
+
+/* Pantallas grandes (desktop) */
+@media (min-width: 1025px) {
+    .header {
+        font-size: 4rem; /* Tamaño original en pantallas grandes */
+        padding: 1rem 2rem; /* Restablecer padding */
+    }
+}

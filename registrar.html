@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Café con La Pan-dilla</title>
+    <link rel="shortcut icon" href="img/cafe.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style4-registro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/cafe.png" alt="Logotipo" class="logo-image">
+        </div>
+        <h1 class="header-title">El Café con La Pan-dilla</h1>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="catalogo.html" class="nav-link">Productos</a>
+            <a href="nosotros.html" class="nav-link">Nosotros</a>
+            <a href="registrar.html" class="nav-link"> <span>Registrarse</span></a>
+        </nav>
+    </header>
+
+    <div class="bienvenido">
+        <h2>bienvenid@s a <br>El Café con La Pan-dilla</h2>
+    </div>
+
+    <div class="registro">
+        <form id="registrationForm">
+            <label for="name">Nombre Completo:</label>
+                <input type="text"  id="name" name="name" placeholder="Ingrese su Nombre Por Favor" required>
+            <div>
+                <label for="username">Ingrese un Nombre de Usuario</label>
+                <input type="text"  id="username" name="username" placeholder="Ingrese un Nombre de Usuario" required>
+            </div>
+            <div>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="ingrese una Contraseña" name="password" required>
+            </div>
+            <div class="botones">
+                <button type="submit">Registrarse</button>
+                <button id="guestButton">Entrar Como Invitado</button>
+            </div>
+        </form>
+        <div id="message" class="hidden"></div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>2024 El Café con La Pan-dilla C.A<br>Ing. Carlos Gonzalez. <br>Todos los Derechos Reservados.</p>
+            <p>Contactos<br>Tlf: +58-4244258944<br>Correo: cg9477083@gmail.com 
+            </p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=100089772800592" class="social-link">Facebook</a>
+                <a href="https://www.instagram.com/carlosgz9477/" class="social-link">Instagram</a>
+                <a href="https://github.com/NoobCoderMaster69" class="social-link">Github</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/registro.js"></script>
+</body>
+</html>
