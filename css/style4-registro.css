@@ -142,10 +142,7 @@ button:hover {
     }
     .footer-content {
         display: grid;
-        align-items: center;
-        padding: 1rem 2rem;
-        background-color: black;
-        font-size: 1.5rem;
+
     }
 
     .nav {
@@ -154,8 +151,12 @@ button:hover {
     }
 
     form {
-        width: 90%; /* Aumentar el ancho en pantallas pequeñas */
+        width: 83%; /* Aumentar el ancho en pantallas pequeñas */
         margin: 2rem auto; /* Espaciado más pequeño */
+    }
+    button {
+        font-size: 1.5rem;
+        padding: 0.3rem;
     }
 
     .bienvenido {

@@ -140,6 +140,11 @@ footer .social-link{
     .noso-card {
         flex-direction: column; /* Cambiar dirección de flex en pantallas pequeñas */
     }
+    .noso-card img{
+        width: 100%; 
+        height: auto;
+        border-radius: 8px;
+    }
 }
 
 /* Pantallas medianas (tablets) */
